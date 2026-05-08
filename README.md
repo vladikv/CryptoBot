@@ -55,20 +55,5 @@
 
 ---
 
-CryptoBot/
-├── bot.py            # Main file — all handlers & commands
-├── database.py       # MariaDB operations
-├── coingecko.py      # CoinGecko API
-├── charts.py         # Price chart builder
-├── formatting.py     # Number formatting
-├── languages.py      # EN / UA / ES translations
-├── news.py           # RSS news fetcher
-├── ai_assistant.py   # Gemini AI integration
-├── requirements.txt
-├── create_db.sql
-├── .env.example
-└── .gitignore
----
-
 ## ⚠️ Disclaimer
 This bot is for informational purposes only. Not financial advice.
