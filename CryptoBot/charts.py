@@ -33,7 +33,8 @@ def build_chart(coin: str, days: int = 7) -> BytesIO | None:
     fig.patch.set_facecolor("#1a1a2e")
     ax.set_facecolor("#16213e")
 
-    ax.plot(timestamps, values, color=color, linewidth=2)
+    padding = (max(values) - min(values)) * 0.1
+    ax.set_ylim(min(values) - padding, max(values) + padding)
     ax.fill_between(timestamps, values, alpha=0.15, color=color)
 
     locator = mdates.DayLocator() if days <= 30 else mdates.WeekdayLocator()
